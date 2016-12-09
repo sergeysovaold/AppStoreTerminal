@@ -1,3 +1,4 @@
+#include <iostream>
 #include "Application.h"
 
 Application::Application()
@@ -19,4 +20,10 @@ void Application::onInstall()
 
 void Application::onUninstall()
 {
+}
+
+void Application::printLog(string str)
+{
+	std::cout << "[" << getName() << "]: "
+		<< str << std::endl;
 }

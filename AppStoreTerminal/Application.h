@@ -8,14 +8,16 @@ class Application
 {
 public:
 	Application();
-	~Application();
+	virtual ~Application();
 
-	int getId();
+	virtual int getId() final;
 	virtual string getName() = 0;
 	virtual string getDescription() = 0;
 
 	virtual void onInstall();
 	virtual void onUninstall();
+
+	void printLog(string str);
 
 private:
 	int m_iID;
