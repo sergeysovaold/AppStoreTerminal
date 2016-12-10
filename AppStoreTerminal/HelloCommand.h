@@ -7,7 +7,8 @@ public:
 	HelloCommand();
 	~HelloCommand();
 
-	virtual string getName() const;
-	virtual void onRun(vector<string> args);
+	string getName() const;
+	string getHelp() const;
+	void onRun(vector<string> args);
 };
 

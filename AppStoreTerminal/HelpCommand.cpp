@@ -50,7 +50,7 @@ void HelpCommand::onRun(vector<string> args)
 	}
 	else
 	{
-		std::cout << getHelp() << std::endl;
+		std::cout << "Too many arguments provided." << std::endl << getHelp() << std::endl;
 	}
 }
 

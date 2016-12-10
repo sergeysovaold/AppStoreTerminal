@@ -15,6 +15,11 @@ string HelloCommand::getName() const
 	return string("hello");
 }
 
+string HelloCommand::getHelp() const
+{
+	return string("Format:\n\thello <name> -  Show greetings for name");
+}
+
 void HelloCommand::onRun(vector<string> args)
 {
 	if (!args.empty())
