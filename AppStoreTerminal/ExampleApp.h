@@ -1,9 +1,12 @@
 #pragma once
 #include "Application.h"
+#include "AppStore.h"
+
+
 class ExampleApp : public Application
 {
 public:
-	ExampleApp();
+	ExampleApp(int id);
 	virtual ~ExampleApp();
 
 	virtual string getName();
@@ -11,4 +14,3 @@ public:
 	virtual void onInstall();
 	virtual void onUninstall();
 };
-

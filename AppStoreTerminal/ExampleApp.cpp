@@ -1,6 +1,7 @@
 #include "ExampleApp.h"
 
-ExampleApp::ExampleApp()
+ExampleApp::ExampleApp(int id)
+	: Application(id)
 {
 }
 

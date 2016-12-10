@@ -5,12 +5,17 @@
 class AppStore
 {
 public:
-	AppStore();
 	~AppStore();
 
 	void publish(Application *app);
+	int nextId();
+
+	static AppStore& instance();
 
 protected:
 	std::vector<Application*> m_List;
-};
+	int m_iLatestId;
 
+private:
+	AppStore();
+};

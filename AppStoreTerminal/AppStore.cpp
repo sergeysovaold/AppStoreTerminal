@@ -3,8 +3,8 @@
 AppStore::AppStore()
 {
 	m_List = {};
+	m_iLatestId = 0;
 }
-
 
 AppStore::~AppStore()
 {
@@ -18,4 +18,15 @@ AppStore::~AppStore()
 void AppStore::publish(Application * app)
 {
 	m_List.push_back(app);
+}
+
+AppStore& AppStore::instance()
+{
+	static AppStore inst;
+	return inst;
+}
+
+int AppStore::nextId()
+{
+	return ++m_iLatestId;
 }

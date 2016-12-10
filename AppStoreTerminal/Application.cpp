@@ -1,7 +1,7 @@
 #include <iostream>
 #include "Application.h"
 
-Application::Application()
+Application::Application(int id) : m_iID(id)
 {
 }
 
@@ -28,6 +28,6 @@ void Application::onDestroy()
 
 void Application::printLog(string str)
 {
-	std::cout << "[" << getName() << "]: "
+	std::cout << "#" << getId() << " [" << getName() << "]: "
 		<< str << std::endl;
 }

@@ -148,12 +148,14 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Application.cpp" />
+    <ClCompile Include="apps.cpp" />
     <ClCompile Include="AppStore.cpp" />
     <ClCompile Include="ExampleApp.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Application.h" />
+    <ClInclude Include="apps.h" />
     <ClInclude Include="AppStore.h" />
     <ClInclude Include="ExampleApp.h" />
   </ItemGroup>

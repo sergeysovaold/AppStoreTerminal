@@ -1,9 +1,10 @@
+#include "apps.h"
 #include "AppStore.h"
-#include "Application.h"
 
 int main()
 {
-	AppStore *store = new AppStore();
+	addAppsToAppStore();
+	AppStore store = AppStore::instance();
 
 
 	std::system("pause");

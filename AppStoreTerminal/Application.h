@@ -7,7 +7,7 @@ using std::string;
 class Application
 {
 public:
-	Application();
+	Application(int id);
 	virtual ~Application();
 
 	virtual int getId() final;
@@ -19,7 +19,7 @@ public:
 
 	virtual void onDestroy();
 
-	void printLog(string str);
+	virtual void printLog(string str) final;
 
 private:
 	int m_iID;
