@@ -26,8 +26,35 @@ void HelpCommand::onRun(vector<string> args)
 			std::cout << "   " << p->getName() << std::endl;
 		}
 	}
+	else if (args.size() == 1)
+	{
+		Command *cmd = getManager()->find(args.front());
+
+		if (!cmd)
+		{
+			std::cout << "Command \"" << args.front() << "\" not found." << std::endl;
+			return;
+		}
+		else
+		{
+			string help = cmd->getHelp();
+
+			if (help.size() == 0)
+			{
+				std::cout << "No help for \"" << cmd->getName() << "\"" << std::endl;
+				return;
+			}
+
+			std::cout << help << std::endl;
+		}
+	}
 	else
 	{
-		std::cout << "Please, use \"help\" command without parameters" << std::endl;
+		std::cout << getHelp() << std::endl;
 	}
+}
+
+string HelpCommand::getHelp() const
+{
+	return string("Command help has format:\n\thelp -            Show available commands\n\thelp [command] -  Show help for specified command");
 }

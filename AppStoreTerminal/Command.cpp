@@ -23,3 +23,8 @@ Command::~Command()
 void Command::onRun(vector<string>)
 {
 }
+
+string Command::getHelp() const
+{
+	return string("");
+}

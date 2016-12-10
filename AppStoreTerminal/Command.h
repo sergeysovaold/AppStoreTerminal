@@ -15,6 +15,7 @@ public:
 
 	virtual void onRun(vector<string>);
 	virtual string getName() const = 0;
+	virtual string getHelp() const;
 
 protected:
 	const CommandManager* getManager() const;

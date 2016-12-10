@@ -8,7 +8,8 @@ public:
 	HelpCommand();
 	~HelpCommand();
 
-	virtual string getName() const;
-	virtual void onRun(vector<string> args);
+	string getName() const;
+	void onRun(vector<string> args);
+	string getHelp() const;
 };
 
