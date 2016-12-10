@@ -17,6 +17,10 @@ CommandManager::~CommandManager()
 	}
 }
 
+//==================================================================================
+// Wait for standard input for command line passed.
+// Find command and execute it with arguments
+//==================================================================================
 bool CommandManager::commandWaitAndExecute()
 {
 	std::cout << getLineGreeting();
@@ -50,6 +54,9 @@ bool CommandManager::commandWaitAndExecute()
 	return true;
 }
 
+//==================================================================================
+// Push command to manager with aliases
+//==================================================================================
 void CommandManager::add(Command * cmd)
 {
 	cmd->setCommandManager(this);
@@ -69,6 +76,9 @@ void CommandManager::add(Command * cmd)
 	}
 }
 
+//==================================================================================
+// Find command by its name/alias
+//==================================================================================
 Command* CommandManager::find(const string cmdName) const
 {
 	auto it = m_List.find(cmdName);
@@ -79,16 +89,25 @@ Command* CommandManager::find(const string cmdName) const
 	return it->second;
 }
 
+//==================================================================================
+// Get map of all commands and aliases
+//==================================================================================
 const map<string, Command*> CommandManager::getCommandsList() const
 {
 	return m_List;
 }
 
+//==================================================================================
+// Get line starter
+//==================================================================================
 string CommandManager::getLineGreeting() const
 {
 	return string("$> ");
 }
 
+//==================================================================================
+// Split command by space to chunks
+//==================================================================================
 void CommandManager::splitCommand(string line, vector<string> &list) const
 {
 	std::stringstream strstr;

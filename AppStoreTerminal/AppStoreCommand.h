@@ -13,5 +13,7 @@ public:
 	vector<string> getAliases() const;
 	void onRun(vector<string> args);
 
+private:
+	CommandManager* m_pSubManager;
 };
 

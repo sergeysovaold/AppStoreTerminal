@@ -20,6 +20,9 @@
     <Filter Include="commands\appstore">
       <UniqueIdentifier>{777ad2bf-17a0-4962-9025-85688c1639be}</UniqueIdentifier>
     </Filter>
+    <Filter Include="commands\appstore\sub">
+      <UniqueIdentifier>{e884b8ef-0c44-4235-ba3b-8fe48f5cdf1d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -64,6 +67,12 @@
     <ClCompile Include="AppStoreCommand.cpp">
       <Filter>commands\appstore</Filter>
     </ClCompile>
+    <ClCompile Include="commands\appstore\AppList.cpp">
+      <Filter>commands\appstore\sub</Filter>
+    </ClCompile>
+    <ClCompile Include="commands\appstore\SearchApp.cpp">
+      <Filter>commands\appstore\sub</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Application.h">
@@ -99,5 +108,17 @@
     <ClInclude Include="AppStoreCommand.h">
       <Filter>commands\appstore</Filter>
     </ClInclude>
+    <ClInclude Include="commands\appstore\BaseAppStoreCommand.h">
+      <Filter>commands\appstore</Filter>
+    </ClInclude>
+    <ClInclude Include="commands\appstore\AppList.h">
+      <Filter>commands\appstore\sub</Filter>
+    </ClInclude>
+    <ClInclude Include="commands\appstore\SearchApp.h">
+      <Filter>commands\appstore\sub</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
   </ItemGroup>
 </Project>

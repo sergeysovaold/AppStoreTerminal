@@ -20,6 +20,7 @@ public:
 	virtual vector<string> getAliases() const;
 
 protected:
+	// Get current command manager object
 	const CommandManager* getManager() const;
 
 private:

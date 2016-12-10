@@ -153,6 +153,8 @@
     <ClCompile Include="AppStoreCommand.cpp" />
     <ClCompile Include="CommandManager.cpp" />
     <ClCompile Include="commands.cpp" />
+    <ClCompile Include="commands\appstore\AppList.cpp" />
+    <ClCompile Include="commands\appstore\SearchApp.cpp" />
     <ClCompile Include="DemoApplication.cpp" />
     <ClCompile Include="ExampleApp.cpp" />
     <ClCompile Include="ExitCommand.cpp" />
@@ -166,6 +168,9 @@
     <ClInclude Include="AppStore.h" />
     <ClInclude Include="AppStoreCommand.h" />
     <ClInclude Include="commands.h" />
+    <ClInclude Include="commands\appstore\AppList.h" />
+    <ClInclude Include="commands\appstore\BaseAppStoreCommand.h" />
+    <ClInclude Include="commands\appstore\SearchApp.h" />
     <ClInclude Include="ExitCommand.h" />
     <ClInclude Include="HelloCommand.h" />
     <ClInclude Include="HelpCommand.h" />
@@ -173,6 +178,9 @@
     <ClInclude Include="CommandManager.h" />
     <ClInclude Include="DemoApplication.h" />
     <ClInclude Include="ExampleApp.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
