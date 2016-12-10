@@ -17,6 +17,8 @@ public:
 	virtual void onInstall();
 	virtual void onUninstall();
 
+	virtual void onDestroy();
+
 	void printLog(string str);
 
 private:

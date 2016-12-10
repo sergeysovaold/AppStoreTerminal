@@ -22,6 +22,10 @@ void Application::onUninstall()
 {
 }
 
+void Application::onDestroy()
+{
+}
+
 void Application::printLog(string str)
 {
 	std::cout << "[" << getName() << "]: "
