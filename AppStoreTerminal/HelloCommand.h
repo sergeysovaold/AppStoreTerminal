@@ -1,13 +1,13 @@
 #pragma once
-#include "ICommand.h"
+#include "Command.h"
 
-class HelloCommand : public ICommand
+class HelloCommand : public Command
 {
 public:
 	HelloCommand();
 	~HelloCommand();
 
-	virtual string getName();
-	virtual void onRun(vector<string> args, const CommandManager *manager);
+	virtual string getName() const;
+	virtual void onRun(vector<string> args);
 };
 

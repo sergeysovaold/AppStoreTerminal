@@ -10,12 +10,12 @@ HelloCommand::~HelloCommand()
 {
 }
 
-string HelloCommand::getName()
+string HelloCommand::getName() const
 {
 	return string("hello");
 }
 
-void HelloCommand::onRun(vector<string> args, const CommandManager *manager)
+void HelloCommand::onRun(vector<string> args)
 {
 	if (!args.empty())
 		std::cout << "Hello " << args.front() << std::endl;

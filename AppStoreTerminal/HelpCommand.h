@@ -2,12 +2,13 @@
 #include "Command.h"
 
 
-class ExitCommand : public Command
+class HelpCommand : public Command
 {
 public:
-	ExitCommand();
-	~ExitCommand();
+	HelpCommand();
+	~HelpCommand();
 
 	virtual string getName() const;
 	virtual void onRun(vector<string> args);
 };
+

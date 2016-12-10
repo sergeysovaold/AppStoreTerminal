@@ -15,7 +15,7 @@
     </Filter>
     <Filter Include="commands">
       <UniqueIdentifier>{346f955b-6191-47d0-98b1-98f3b5f3e718}</UniqueIdentifier>
-      <Extensions>Command</Extensions>
+      <Extensions>*Command</Extensions>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -52,6 +52,12 @@
     <ClCompile Include="commands.cpp">
       <Filter>commands</Filter>
     </ClCompile>
+    <ClCompile Include="HelpCommand.cpp">
+      <Filter>commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Command.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Application.h">
@@ -69,9 +75,6 @@
     <ClInclude Include="CommandManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ICommand.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="ExitCommand.h">
       <Filter>commands</Filter>
     </ClInclude>
@@ -80,6 +83,12 @@
     </ClInclude>
     <ClInclude Include="commands.h">
       <Filter>commands</Filter>
+    </ClInclude>
+    <ClInclude Include="HelpCommand.h">
+      <Filter>commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Command.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

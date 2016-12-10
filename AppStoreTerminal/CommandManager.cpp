@@ -33,7 +33,7 @@ bool CommandManager::commandWaitAndExecute()
 	if (!cmd.empty())
 	{
 		list.erase(list.begin());
-		ICommand *command = find(cmd);
+		Command *command = find(cmd);
 
 		if (!command) {
 			std::cout << "Command \"" << cmd << "\" not found!" << std::endl;
@@ -50,12 +50,13 @@ bool CommandManager::commandWaitAndExecute()
 	return true;
 }
 
-void CommandManager::add(ICommand * cmd)
+void CommandManager::add(Command * cmd)
 {
-	m_List.insert(CommandPair(cmd->getName(), cmd));
+	cmd->setCommandManager(this);
+	m_List.insert(std::pair<string, Command*>(cmd->getName(), cmd));
 }
 
-ICommand * CommandManager::find(const string cmdName) const
+Command* CommandManager::find(const string cmdName) const
 {
 	auto it = m_List.find(cmdName);
 

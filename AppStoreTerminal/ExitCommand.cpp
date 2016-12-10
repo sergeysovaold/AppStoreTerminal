@@ -9,12 +9,12 @@ ExitCommand::~ExitCommand()
 {
 }
 
-string ExitCommand::getName()
+string ExitCommand::getName() const
 {
 	return string("exit");
 }
 
-void ExitCommand::onRun(vector<string> args, const CommandManager *manager)
+void ExitCommand::onRun(vector<string> args)
 {
 	exit(0);
 }

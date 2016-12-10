@@ -156,6 +156,8 @@
     <ClCompile Include="ExampleApp.cpp" />
     <ClCompile Include="ExitCommand.cpp" />
     <ClCompile Include="HelloCommand.cpp" />
+    <ClCompile Include="HelpCommand.cpp" />
+    <ClCompile Include="Command.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -164,7 +166,8 @@
     <ClInclude Include="commands.h" />
     <ClInclude Include="ExitCommand.h" />
     <ClInclude Include="HelloCommand.h" />
-    <ClInclude Include="ICommand.h" />
+    <ClInclude Include="HelpCommand.h" />
+    <ClInclude Include="Command.h" />
     <ClInclude Include="CommandManager.h" />
     <ClInclude Include="DemoApplication.h" />
     <ClInclude Include="ExampleApp.h" />
