@@ -17,6 +17,9 @@
       <UniqueIdentifier>{346f955b-6191-47d0-98b1-98f3b5f3e718}</UniqueIdentifier>
       <Extensions>*Command</Extensions>
     </Filter>
+    <Filter Include="commands\appstore">
+      <UniqueIdentifier>{777ad2bf-17a0-4962-9025-85688c1639be}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -58,6 +61,9 @@
     <ClCompile Include="Command.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="AppStoreCommand.cpp">
+      <Filter>commands\appstore</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Application.h">
@@ -89,6 +95,9 @@
     </ClInclude>
     <ClInclude Include="Command.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AppStoreCommand.h">
+      <Filter>commands\appstore</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

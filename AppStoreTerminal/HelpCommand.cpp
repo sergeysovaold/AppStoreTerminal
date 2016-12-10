@@ -23,7 +23,12 @@ void HelpCommand::onRun(vector<string> args)
 		for (auto &it : getManager()->getCommandsList())
 		{
 			Command *p = it.second;
-			std::cout << "   " << p->getName() << std::endl;
+			string alias = it.first;
+			
+			if (p->getName().compare(alias) == 0)
+				std::cout << "   " << p->getName() << std::endl;
+			else
+				std::cout << "   " << alias << "    -> " << p->getName() << std::endl;
 		}
 	}
 	else if (args.size() == 1)

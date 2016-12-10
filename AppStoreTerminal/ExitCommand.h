@@ -10,5 +10,6 @@ public:
 
 	string getName() const;
 	string getHelp() const;
+	string getAlias() const;
 	void onRun(vector<string> args);
 };

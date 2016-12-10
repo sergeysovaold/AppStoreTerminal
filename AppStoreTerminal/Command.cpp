@@ -28,3 +28,13 @@ string Command::getHelp() const
 {
 	return string("");
 }
+
+string Command::getAlias() const
+{
+	return string();
+}
+
+vector<string> Command::getAliases() const
+{
+	return vector<string>();
+}

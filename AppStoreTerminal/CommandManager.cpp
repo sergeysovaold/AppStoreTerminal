@@ -54,6 +54,19 @@ void CommandManager::add(Command * cmd)
 {
 	cmd->setCommandManager(this);
 	m_List.insert(std::pair<string, Command*>(cmd->getName(), cmd));
+
+	if (cmd->getAlias().size() != 0)
+	{
+		m_List.insert(std::pair<string, Command*>(cmd->getAlias(), cmd));
+	}
+
+	if (!cmd->getAliases().empty())
+	{
+		for (auto &it : cmd->getAliases())
+		{
+			m_List.insert(std::pair<string, Command*>(it, cmd));
+		}
+	}
 }
 
 Command* CommandManager::find(const string cmdName) const
