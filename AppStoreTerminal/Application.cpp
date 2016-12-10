@@ -22,6 +22,10 @@ void Application::onUninstall()
 {
 }
 
+void Application::onPublish()
+{
+}
+
 void Application::onDestroy()
 {
 }

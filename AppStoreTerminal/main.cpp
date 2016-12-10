@@ -11,7 +11,7 @@ int main()
 
 	std::cout << "Finded applications: " << store->getAllApplications().size() << std::endl;
 	for (Application * app : store->getAllApplications()) {
-		std::cout << app->getId() << ": " << app->getName() << ".   " << app->getDescription() << std::endl;
+		std::cout << app->getId() << ": " << app->getName() << std::endl;
 	}
 
 	std::system("pause");
