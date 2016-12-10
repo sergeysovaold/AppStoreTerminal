@@ -7,9 +7,6 @@ using std::string;
 class Application
 {
 public:
-	Application(int id);
-	virtual ~Application();
-
 	virtual int getId() final;
 	virtual string getName() = 0;
 	virtual string getDescription() = 0;
@@ -21,7 +18,13 @@ public:
 
 	virtual void printLog(string str) final;
 
+protected:
+	Application(int id);
+	virtual ~Application();
+
 private:
 	int m_iID;
+
+	friend class AppStore;
 };
 
