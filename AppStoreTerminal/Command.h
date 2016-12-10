@@ -16,10 +16,12 @@ public:
 	virtual void onRun(vector<string>);
 	virtual string getName() const = 0;
 
+protected:
+	const CommandManager* getManager() const;
+
 private:
-	const CommandManager* manager;
 	void setCommandManager(const CommandManager *);
-	
+	const CommandManager* m_pManager;
 	friend class CommandManager;
 };
 

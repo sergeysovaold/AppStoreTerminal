@@ -14,6 +14,16 @@ int Application::getId()
 	return m_iID;
 }
 
+bool Application::hasCommands() const
+{
+	return false;
+}
+
+vector<Command> Application::getCommandsList() const
+{
+	return vector<Command>();
+}
+
 void Application::onInstall()
 {
 }

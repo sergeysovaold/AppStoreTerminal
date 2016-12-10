@@ -18,6 +18,7 @@ public:
 	bool commandWaitAndExecute();
 	void add(Command *cmd);
 	Command* find(const string cmdName) const;
+	const map<string, Command *> getCommandsList() const;
 
 protected:
 	string getLineGreeting() const;

@@ -1,13 +1,19 @@
 #include "Command.h"
+#include "CommandManager.h"
 
 Command::Command()
 {
-	manager = nullptr;
+	m_pManager = nullptr;
+}
+
+const CommandManager* Command::getManager() const
+{
+	return m_pManager;
 }
 
 void Command::setCommandManager(const CommandManager * man)
 {
-	manager = man;
+	m_pManager = man;
 }
 
 Command::~Command()

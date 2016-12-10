@@ -66,6 +66,11 @@ Command* CommandManager::find(const string cmdName) const
 	return it->second;
 }
 
+const map<string, Command*> CommandManager::getCommandsList() const
+{
+	return m_List;
+}
+
 string CommandManager::getLineGreeting() const
 {
 	return string("$> ");
