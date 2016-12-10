@@ -20,13 +20,18 @@ void AppStore::publish(Application * app)
 	m_List.push_back(app);
 }
 
-AppStore& AppStore::instance()
+AppStore* AppStore::instance()
 {
-	static AppStore inst;
+	static AppStore *inst = new AppStore();
 	return inst;
 }
 
 int AppStore::nextId()
 {
 	return ++m_iLatestId;
+}
+
+AppList AppStore::getAllApplications() const
+{
+	return m_List;
 }

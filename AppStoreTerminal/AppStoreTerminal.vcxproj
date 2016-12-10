@@ -155,7 +155,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Application.h" />
-    <ClInclude Include="apps.h" />
     <ClInclude Include="AppStore.h" />
     <ClInclude Include="ExampleApp.h" />
   </ItemGroup>

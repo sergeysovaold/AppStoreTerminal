@@ -2,15 +2,19 @@
 #include <vector>
 #include "Application.h"
 
+typedef std::vector<Application *> AppList;
+
 class AppStore
 {
 public:
-	~AppStore();
+	AppStore(AppStore const &) = delete;
+	void operator=(AppStore const&) = delete;
 
 	void publish(Application *app);
 	int nextId();
+	AppList getAllApplications() const;
 
-	static AppStore& instance();
+	static AppStore* instance();
 
 protected:
 	std::vector<Application*> m_List;
@@ -18,4 +22,5 @@ protected:
 
 private:
 	AppStore();
+	~AppStore();
 };
