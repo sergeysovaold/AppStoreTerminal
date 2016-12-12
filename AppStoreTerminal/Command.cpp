@@ -35,6 +35,11 @@ string Command::getHelp() const
 	return string("");
 }
 
+string Command::getDescription() const
+{
+	return string();
+}
+
 //==================================================================================
 // Single alias for command
 //==================================================================================

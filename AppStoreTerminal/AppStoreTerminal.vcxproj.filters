@@ -108,9 +108,6 @@
     <ClInclude Include="AppStoreCommand.h">
       <Filter>commands\appstore</Filter>
     </ClInclude>
-    <ClInclude Include="commands\appstore\BaseAppStoreCommand.h">
-      <Filter>commands\appstore</Filter>
-    </ClInclude>
     <ClInclude Include="commands\appstore\AppList.h">
       <Filter>commands\appstore\sub</Filter>
     </ClInclude>

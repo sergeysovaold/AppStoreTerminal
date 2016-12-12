@@ -1,13 +1,13 @@
 #pragma once
-#include "BaseAppStoreCommand.h"
+#include "Command.h"
 
-class AppList : public BaseAppStoreCommand
+class AppList : public Command
 {
 public:
 	AppList();
 	~AppList();
 
-	string getName() const;
-	string getDescription() const;
-	void onRun(vector<string>) const;
+	string getName() const override;
+	string getDescription() const override;
+	void onRun(vector<string>) override;
 };

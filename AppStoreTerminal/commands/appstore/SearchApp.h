@@ -1,14 +1,14 @@
 #pragma once
-#include "BaseAppStoreCommand.h"
+#include "Command.h"
 
-class SearchApp : public BaseAppStoreCommand
+class SearchApp : public Command
 {
 public:
 	SearchApp();
 	~SearchApp();
 
-	string getName() const;
-	string getDescription() const;
-	void onRun(vector<string>) const;
+	string getName() const override;
+	string getDescription() const override;
+	void onRun(vector<string>) override;
 };
 

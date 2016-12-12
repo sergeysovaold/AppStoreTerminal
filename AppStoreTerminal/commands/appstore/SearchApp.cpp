@@ -20,7 +20,7 @@ string SearchApp::getDescription() const
 	return string("search app in store");
 }
 
-void SearchApp::onRun(vector<string>) const
+void SearchApp::onRun(vector<string>)
 {
 	std::cout << "[Not implemented yet]" << std::endl;
 }

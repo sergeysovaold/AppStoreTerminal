@@ -63,3 +63,8 @@ string HelpCommand::getHelp() const
 {
 	return string("Command help has format:\n\thelp -            Show available commands\n\thelp [command] -  Show help for specified command");
 }
+
+string HelpCommand::getAlias() const
+{
+	return string("?");
+}

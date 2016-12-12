@@ -16,6 +16,7 @@ public:
 	virtual void onRun(vector<string>);
 	virtual string getName() const = 0;
 	virtual string getHelp() const;
+	virtual string getDescription() const;
 	virtual string getAlias() const;
 	virtual vector<string> getAliases() const;
 

@@ -8,8 +8,9 @@ public:
 	HelpCommand();
 	~HelpCommand();
 
-	string getName() const;
-	void onRun(vector<string> args);
-	string getHelp() const;
+	string getName() const override;
+	void onRun(vector<string> args) override;
+	string getHelp() const override;
+	string getAlias() const override;
 };
 

@@ -48,7 +48,7 @@ string AppStoreCommand::getHelp() const
 
 	for (auto &it : m_pSubManager->getCommandsList())
 	{
-		BaseAppStoreCommand *p = dynamic_cast<BaseAppStoreCommand *>(it.second);
+		Command *p = it.second;
 		unsigned int currLen = p->getName().size();
 		
 		str << "\t appstore " << p->getName() << string(iMaxLen - currLen, ' ')
@@ -68,7 +68,7 @@ string AppStoreCommand::getHelp() const
 
 vector<string> AppStoreCommand::getAliases() const
 {
-	return { "as", "store" };
+	return { "as" };
 }
 
 void AppStoreCommand::onRun(vector<string> args)
