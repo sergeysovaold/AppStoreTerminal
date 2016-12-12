@@ -22,6 +22,7 @@ void main()
 
 	loadApplications(store);
 	installCommands(manager);
+	installApplicationsCommands(store->getAllApplications(), manager); // TODO: replace `->getAllApplications()` to  `->getInstalledApplications()`
 
 	signal(SIGINT, handleSignal);
 

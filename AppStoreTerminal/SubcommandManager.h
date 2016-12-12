@@ -5,12 +5,17 @@
 class SubcommandManager : public CommandManager
 {
 public:
+	SubcommandManager();
 	SubcommandManager(const Command* parent);
+	SubcommandManager(const string name);
 	virtual ~SubcommandManager();
 
 	string getCommandsHelp(const string) const;
 
+	inline const string getParentName() const;
+	void setParentName(const string);
+
 private:
-	const Command* m_pParent;
+	string m_sParentName;
 };
 

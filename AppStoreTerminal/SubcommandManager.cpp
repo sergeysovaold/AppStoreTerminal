@@ -7,9 +7,22 @@
 using std::vector;
 using std::pair;
 
-SubcommandManager::SubcommandManager(const Command* parent)
-	: m_pParent(parent), CommandManager()
+SubcommandManager::SubcommandManager()
+	: CommandManager()
 {
+	m_sParentName = "";
+}
+
+SubcommandManager::SubcommandManager(const Command* parent)
+	: CommandManager()
+{
+	m_sParentName = parent->getName();
+}
+
+SubcommandManager::SubcommandManager(const string name)
+	: CommandManager()
+{
+	m_sParentName = name;
 }
 
 SubcommandManager::~SubcommandManager()
@@ -39,10 +52,20 @@ string SubcommandManager::getCommandsHelp(const string emptyFirstCommandDescript
 	{
 		unsigned currLen = it.first.size();
 
-		str << "\t" << m_pParent->getName() << " " << it.first
+		str << "\t" << getParentName() << " " << it.first
 			<< string(iMaxLen - currLen + DESCRIPTION_PADDING, ' ')
 			<< it.second << std::endl;
 	}
 
 	return string(str.str());
+}
+
+void SubcommandManager::setParentName(const string newName)
+{
+	m_sParentName = newName;
+}
+
+const string SubcommandManager::getParentName() const
+{
+	return m_sParentName;
 }

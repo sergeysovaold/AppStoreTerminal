@@ -1,12 +1,16 @@
 #include <iostream>
 #include "Application.h"
+#include "SubcommandManager.h"
+
 
 Application::Application(int id) : m_iID(id)
 {
+	m_Commands = new SubcommandManager();
 }
 
 Application::~Application()
 {
+	delete m_Commands;
 }
 
 int Application::getId() const
@@ -14,14 +18,14 @@ int Application::getId() const
 	return m_iID;
 }
 
-bool Application::hasCommands() const
+const SubcommandManager* Application::getCommands() const
 {
-	return false;
+	return m_Commands;
 }
 
-vector<Command> Application::getCommandsList() const
+void Application::addCommand(Command* command)
 {
-	return vector<Command>();
+	m_Commands->add(command);
 }
 
 void Application::onInstall()

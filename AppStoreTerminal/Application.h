@@ -7,6 +7,8 @@
 using std::string;
 using std::vector;
 
+class SubcommandManager;
+
 class Application
 {
 public:
@@ -14,8 +16,10 @@ public:
 	virtual string getName() const = 0;
 	virtual string getDescription() const = 0;
 
-	virtual bool hasCommands() const;
-	virtual vector<Command> getCommandsList() const;
+	virtual const SubcommandManager* getCommands() const final;
+	virtual void addCommand(Command*) final;
+
+	// TODO: Create special command that resolve all subcommands calls
 
 	virtual void onInstall();
 	virtual void onUninstall();
@@ -31,6 +35,7 @@ protected:
 
 private:
 	int m_iID;
+	SubcommandManager* m_Commands;
 
 	friend class AppStore;
 };
