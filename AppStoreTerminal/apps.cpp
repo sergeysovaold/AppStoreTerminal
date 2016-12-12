@@ -1,8 +1,8 @@
 #include <iostream>
 #include "AppStore.h"
 
-#include "ExampleApp.h"
-#include "DemoApplication.h"
+#include "applications\DemoApplication.h"
+#include "applications\ExampleApp.h"
 
 void initApplications()
 {

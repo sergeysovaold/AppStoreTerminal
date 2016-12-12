@@ -9,10 +9,6 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
     </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
     <Filter Include="commands">
       <UniqueIdentifier>{346f955b-6191-47d0-98b1-98f3b5f3e718}</UniqueIdentifier>
       <Extensions>*Command</Extensions>
@@ -22,6 +18,9 @@
     </Filter>
     <Filter Include="commands\appstore\sub">
       <UniqueIdentifier>{e884b8ef-0c44-4235-ba3b-8fe48f5cdf1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Applications">
+      <UniqueIdentifier>{75dc9c61-394b-4505-a797-83ea912f574b}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -34,13 +33,7 @@
     <ClCompile Include="AppStore.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ExampleApp.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="apps.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="DemoApplication.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="CommandManager.cpp">
@@ -73,18 +66,18 @@
     <ClCompile Include="SubcommandManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="applications\DemoApplication.cpp">
+      <Filter>Applications</Filter>
+    </ClCompile>
+    <ClCompile Include="applications\ExampleApp.cpp">
+      <Filter>Applications</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Application.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="AppStore.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ExampleApp.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="DemoApplication.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="CommandManager.h">
@@ -116,6 +109,12 @@
     </ClInclude>
     <ClInclude Include="SubcommandManager.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="applications\ExampleApp.h">
+      <Filter>Applications</Filter>
+    </ClInclude>
+    <ClInclude Include="applications\DemoApplication.h">
+      <Filter>Applications</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
