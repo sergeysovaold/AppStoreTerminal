@@ -2,6 +2,7 @@
 #include <sstream>
 
 #include "CommandManager.h"
+#include "Command.h"
 
 CommandManager::CommandManager()
 {

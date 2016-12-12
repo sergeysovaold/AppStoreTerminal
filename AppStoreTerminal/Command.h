@@ -2,7 +2,7 @@
 #include <string>
 #include <vector>
 
-extern class CommandManager;
+class CommandManager;
 
 using std::string;
 using std::vector;
@@ -25,8 +25,7 @@ protected:
 	const CommandManager* getManager() const;
 
 private:
-	void setCommandManager(const CommandManager *);
+	void setCommandManager(const CommandManager* man);
 	const CommandManager* m_pManager;
 	friend class CommandManager;
 };
-

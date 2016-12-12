@@ -165,6 +165,7 @@
     <ClCompile Include="HelpCommand.cpp" />
     <ClCompile Include="Command.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="SubcommandManager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Application.h" />
@@ -180,6 +181,7 @@
     <ClInclude Include="CommandManager.h" />
     <ClInclude Include="DemoApplication.h" />
     <ClInclude Include="ExampleApp.h" />
+    <ClInclude Include="SubcommandManager.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram.cd" />

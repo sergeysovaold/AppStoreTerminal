@@ -11,7 +11,7 @@ const CommandManager* Command::getManager() const
 	return m_pManager;
 }
 
-void Command::setCommandManager(const CommandManager * man)
+void Command::setCommandManager(const CommandManager* man)
 {
 	m_pManager = man;
 }

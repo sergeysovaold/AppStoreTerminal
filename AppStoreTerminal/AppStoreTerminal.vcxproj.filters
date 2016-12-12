@@ -73,6 +73,9 @@
     <ClCompile Include="commands\appstore\SearchApp.cpp">
       <Filter>commands\appstore\sub</Filter>
     </ClCompile>
+    <ClCompile Include="SubcommandManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Application.h">
@@ -113,6 +116,9 @@
     </ClInclude>
     <ClInclude Include="commands\appstore\SearchApp.h">
       <Filter>commands\appstore\sub</Filter>
+    </ClInclude>
+    <ClInclude Include="SubcommandManager.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

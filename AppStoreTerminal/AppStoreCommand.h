@@ -1,6 +1,6 @@
 #pragma once
 #include "Command.h"
-#include "CommandManager.h"
+#include "SubcommandManager.h"
 
 class AppStoreCommand : public Command
 {
@@ -14,6 +14,6 @@ public:
 	void onRun(vector<string> args);
 
 private:
-	CommandManager* m_pSubManager;
+	SubcommandManager* m_pSubManager;
 };
 

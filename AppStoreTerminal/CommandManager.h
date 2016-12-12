@@ -3,11 +3,11 @@
 #include <vector>
 #include <map>
 
-#include "Command.h"
-
 using std::string;
 using std::vector;
 using std::map;
+
+class Command;
 
 class CommandManager
 {
