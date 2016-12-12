@@ -17,13 +17,13 @@ void handleSignal(int signal)
 
 void main()
 {
-	loadApplications();
-
 	auto *manager = new CommandManager();
+	auto *store = new AppStore();
+
+	loadApplications(store);
 	installCommands(manager);
 
 	signal(SIGINT, handleSignal);
-
 
 	while (manager->commandWaitAndExecute())
 	{

@@ -7,6 +7,7 @@ typedef std::vector<Application *> AppList;
 class AppStore final
 {
 public:
+	AppStore();
 	AppStore(AppStore const &) = delete;
 	void operator=(AppStore const&) = delete;
 
@@ -14,13 +15,10 @@ public:
 	int nextId();
 	AppList getAllApplications() const;
 
-	static AppStore* instance();
-
 protected:
 	std::vector<Application*> m_List;
 	int m_iLatestId;
 
 private:
-	AppStore();
 	~AppStore();
 };

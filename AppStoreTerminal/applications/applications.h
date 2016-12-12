@@ -1,3 +1,5 @@
 #pragma once
 
-void loadApplications(void);
+class AppStore;
+
+void loadApplications(AppStore*);
