@@ -69,6 +69,9 @@
     <ClCompile Include="commands\appstore\SearchApp.cpp">
       <Filter>commands\appstore</Filter>
     </ClCompile>
+    <ClCompile Include="applications\StoreApplication.cpp">
+      <Filter>Applications</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Application.h">
@@ -115,6 +118,9 @@
     </ClInclude>
     <ClInclude Include="commands\appstore\SearchApp.h">
       <Filter>commands\appstore</Filter>
+    </ClInclude>
+    <ClInclude Include="applications\StoreApplication.h">
+      <Filter>Applications</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

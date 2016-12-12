@@ -10,9 +10,9 @@
 void installCommands(CommandManager *manager)
 {
 	manager->add(new ExitCommand());
-	manager->add(new HelloCommand());
+	//manager->add(new HelloCommand());
 	manager->add(new HelpCommand());
-	manager->add(new AppStoreCommand());
+	//manager->add(new AppStoreCommand());
 }
 
 void installApplicationsCommands(const AppList apps, CommandManager *manager)

@@ -2,11 +2,11 @@
 #include "Application.h"
 
 
-class DemoApplication : public Application
+class StoreApplication : public Application
 {
 public:
-	DemoApplication(int id);
-	virtual ~DemoApplication();
+	StoreApplication(int id);
+	virtual ~StoreApplication();
 
 	string getName() const override;
 	string getDescription() const override;

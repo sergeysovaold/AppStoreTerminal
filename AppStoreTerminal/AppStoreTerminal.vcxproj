@@ -165,6 +165,7 @@
     <ClCompile Include="commands\HelpCommand.cpp" />
     <ClCompile Include="Command.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="applications\StoreApplication.cpp" />
     <ClCompile Include="SubcommandManager.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -182,6 +183,7 @@
     <ClInclude Include="CommandManager.h" />
     <ClInclude Include="applications\DemoApplication.h" />
     <ClInclude Include="applications\ExampleApp.h" />
+    <ClInclude Include="applications\StoreApplication.h" />
     <ClInclude Include="SubcommandManager.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
