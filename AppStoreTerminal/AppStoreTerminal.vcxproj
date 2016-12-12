@@ -151,32 +151,33 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Application.cpp" />
-    <ClCompile Include="apps.cpp" />
+    <ClCompile Include="applications\applications.cpp" />
     <ClCompile Include="AppStore.cpp" />
-    <ClCompile Include="AppStoreCommand.cpp" />
+    <ClCompile Include="commands\AppStoreCommand.cpp" />
     <ClCompile Include="CommandManager.cpp" />
-    <ClCompile Include="commands.cpp" />
+    <ClCompile Include="commands\commands.cpp" />
     <ClCompile Include="commands\appstore\AppList.cpp" />
     <ClCompile Include="commands\appstore\SearchApp.cpp" />
     <ClCompile Include="applications\DemoApplication.cpp" />
     <ClCompile Include="applications\ExampleApp.cpp" />
-    <ClCompile Include="ExitCommand.cpp" />
-    <ClCompile Include="HelloCommand.cpp" />
-    <ClCompile Include="HelpCommand.cpp" />
+    <ClCompile Include="commands\ExitCommand.cpp" />
+    <ClCompile Include="commands\HelloCommand.cpp" />
+    <ClCompile Include="commands\HelpCommand.cpp" />
     <ClCompile Include="Command.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="SubcommandManager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Application.h" />
+    <ClInclude Include="applications\applications.h" />
     <ClInclude Include="AppStore.h" />
-    <ClInclude Include="AppStoreCommand.h" />
-    <ClInclude Include="commands.h" />
+    <ClInclude Include="commands\AppStoreCommand.h" />
+    <ClInclude Include="commands\commands.h" />
     <ClInclude Include="commands\appstore\AppList.h" />
     <ClInclude Include="commands\appstore\SearchApp.h" />
-    <ClInclude Include="ExitCommand.h" />
-    <ClInclude Include="HelloCommand.h" />
-    <ClInclude Include="HelpCommand.h" />
+    <ClInclude Include="commands\ExitCommand.h" />
+    <ClInclude Include="commands\HelloCommand.h" />
+    <ClInclude Include="commands\HelpCommand.h" />
     <ClInclude Include="Command.h" />
     <ClInclude Include="CommandManager.h" />
     <ClInclude Include="applications\DemoApplication.h" />

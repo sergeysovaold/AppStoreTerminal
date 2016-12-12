@@ -1,4 +1,5 @@
 #include <iostream>
+#include "applications.h"
 #include "AppStore.h"
 
 #include "applications\DemoApplication.h"

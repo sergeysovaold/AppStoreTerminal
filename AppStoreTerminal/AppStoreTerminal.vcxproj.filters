@@ -33,29 +33,11 @@
     <ClCompile Include="AppStore.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="apps.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="CommandManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ExitCommand.cpp">
-      <Filter>commands</Filter>
-    </ClCompile>
-    <ClCompile Include="HelloCommand.cpp">
-      <Filter>commands</Filter>
-    </ClCompile>
-    <ClCompile Include="commands.cpp">
-      <Filter>commands</Filter>
-    </ClCompile>
-    <ClCompile Include="HelpCommand.cpp">
-      <Filter>commands</Filter>
-    </ClCompile>
     <ClCompile Include="Command.cpp">
       <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="AppStoreCommand.cpp">
-      <Filter>commands\appstore</Filter>
     </ClCompile>
     <ClCompile Include="commands\appstore\AppList.cpp">
       <Filter>commands\appstore\sub</Filter>
@@ -72,6 +54,24 @@
     <ClCompile Include="applications\ExampleApp.cpp">
       <Filter>Applications</Filter>
     </ClCompile>
+    <ClCompile Include="commands\commands.cpp">
+      <Filter>commands</Filter>
+    </ClCompile>
+    <ClCompile Include="commands\AppStoreCommand.cpp">
+      <Filter>commands\appstore</Filter>
+    </ClCompile>
+    <ClCompile Include="commands\ExitCommand.cpp">
+      <Filter>commands</Filter>
+    </ClCompile>
+    <ClCompile Include="commands\HelloCommand.cpp">
+      <Filter>commands</Filter>
+    </ClCompile>
+    <ClCompile Include="commands\HelpCommand.cpp">
+      <Filter>commands</Filter>
+    </ClCompile>
+    <ClCompile Include="applications\applications.cpp">
+      <Filter>Applications</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Application.h">
@@ -83,23 +83,8 @@
     <ClInclude Include="CommandManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ExitCommand.h">
-      <Filter>commands</Filter>
-    </ClInclude>
-    <ClInclude Include="HelloCommand.h">
-      <Filter>commands</Filter>
-    </ClInclude>
-    <ClInclude Include="commands.h">
-      <Filter>commands</Filter>
-    </ClInclude>
-    <ClInclude Include="HelpCommand.h">
-      <Filter>commands</Filter>
-    </ClInclude>
     <ClInclude Include="Command.h">
       <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="AppStoreCommand.h">
-      <Filter>commands\appstore</Filter>
     </ClInclude>
     <ClInclude Include="commands\appstore\AppList.h">
       <Filter>commands\appstore\sub</Filter>
@@ -114,6 +99,24 @@
       <Filter>Applications</Filter>
     </ClInclude>
     <ClInclude Include="applications\DemoApplication.h">
+      <Filter>Applications</Filter>
+    </ClInclude>
+    <ClInclude Include="commands\commands.h">
+      <Filter>commands</Filter>
+    </ClInclude>
+    <ClInclude Include="commands\AppStoreCommand.h">
+      <Filter>commands\appstore</Filter>
+    </ClInclude>
+    <ClInclude Include="commands\ExitCommand.h">
+      <Filter>commands</Filter>
+    </ClInclude>
+    <ClInclude Include="commands\HelloCommand.h">
+      <Filter>commands</Filter>
+    </ClInclude>
+    <ClInclude Include="commands\HelpCommand.h">
+      <Filter>commands</Filter>
+    </ClInclude>
+    <ClInclude Include="applications\applications.h">
       <Filter>Applications</Filter>
     </ClInclude>
   </ItemGroup>
