@@ -12,12 +12,12 @@ DemoApplication::~DemoApplication()
 {
 }
 
-string DemoApplication::getName()
+string DemoApplication::getName() const
 {
 	return string("Demo");
 }
 
-string DemoApplication::getDescription()
+string DemoApplication::getDescription() const
 {
 	return string("Demo application for new AppStore");
 }

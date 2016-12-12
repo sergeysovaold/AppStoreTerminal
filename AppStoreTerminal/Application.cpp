@@ -9,7 +9,7 @@ Application::~Application()
 {
 }
 
-int Application::getId()
+int Application::getId() const
 {
 	return m_iID;
 }
@@ -40,7 +40,7 @@ void Application::onDestroy()
 {
 }
 
-void Application::printLog(string str)
+void Application::printLog(string str) const
 {
 	std::cout << "#" << getId() << " [" << getName() << "]: "
 		<< str << std::endl;

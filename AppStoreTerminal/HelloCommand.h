@@ -7,8 +7,8 @@ public:
 	HelloCommand();
 	~HelloCommand();
 
-	string getName() const;
-	string getHelp() const;
-	void onRun(vector<string> args);
+	string getName() const override;
+	string getHelp() const override;
+	void onRun(vector<string> args) override;
 };
 

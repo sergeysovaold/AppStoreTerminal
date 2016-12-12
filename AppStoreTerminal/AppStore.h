@@ -4,7 +4,7 @@
 
 typedef std::vector<Application *> AppList;
 
-class AppStore
+class AppStore final
 {
 public:
 	AppStore(AppStore const &) = delete;

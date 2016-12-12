@@ -9,8 +9,8 @@ public:
 	ExampleApp(int id);
 	virtual ~ExampleApp();
 
-	virtual string getName();
-	virtual string getDescription();
-	virtual void onInstall();
-	virtual void onUninstall();
+	string getName() const override;
+	string getDescription() const override;
+	void onInstall() override;
+	void onUninstall() override;
 };

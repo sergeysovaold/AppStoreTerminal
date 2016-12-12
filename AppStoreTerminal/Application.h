@@ -10,9 +10,9 @@ using std::vector;
 class Application
 {
 public:
-	virtual int getId() final;
-	virtual string getName() = 0;
-	virtual string getDescription() = 0;
+	virtual int getId() const final;
+	virtual string getName() const = 0;
+	virtual string getDescription() const = 0;
 
 	virtual bool hasCommands() const;
 	virtual vector<Command> getCommandsList() const;
@@ -23,7 +23,7 @@ public:
 	virtual void onPublish();
 	virtual void onDestroy();
 
-	virtual void printLog(string str) final;
+	virtual void printLog(string str) const final;
 
 protected:
 	Application(int id);

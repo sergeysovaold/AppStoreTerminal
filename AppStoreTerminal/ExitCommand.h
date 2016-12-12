@@ -8,8 +8,8 @@ public:
 	ExitCommand();
 	~ExitCommand();
 
-	string getName() const;
-	string getHelp() const;
-	string getAlias() const;
-	void onRun(vector<string> args);
+	string getName() const override;
+	string getHelp() const override;
+	string getAlias() const override;
+	void onRun(vector<string> args) override;
 };

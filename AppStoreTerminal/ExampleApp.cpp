@@ -9,12 +9,12 @@ ExampleApp::~ExampleApp()
 {
 }
 
-string ExampleApp::getName()
+string ExampleApp::getName() const
 {
 	return string("Example");
 }
 
-string ExampleApp::getDescription()
+string ExampleApp::getDescription() const
 {
 	return string("Application created for stub only.");
 }

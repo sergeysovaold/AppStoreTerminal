@@ -6,7 +6,7 @@ public:
 	DemoApplication(int id);
 	virtual ~DemoApplication();
 
-	virtual string getName();
-	virtual string getDescription();
+	string getName() const override;
+	string getDescription() const override;
 };
 
