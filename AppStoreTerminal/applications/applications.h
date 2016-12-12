@@ -1,3 +1,3 @@
 #pragma once
 
-void initApplications();
+void loadApplications(void);

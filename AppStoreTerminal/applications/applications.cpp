@@ -5,11 +5,11 @@
 #include "applications\DemoApplication.h"
 #include "applications\ExampleApp.h"
 
-void initApplications()
+void loadApplications()
 {
-	AppStore *p = AppStore::instance();
+	AppStore *as = AppStore::instance();
 
-	p->publish(new ExampleApp(p->nextId()));
-	p->publish(new DemoApplication(p->nextId()));
+	as->publish(new ExampleApp(as->nextId()));
+	as->publish(new DemoApplication(as->nextId()));
 
 }

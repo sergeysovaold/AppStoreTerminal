@@ -17,6 +17,8 @@ void handleSignal(int signal)
 
 void main()
 {
+	loadApplications();
+
 	auto *manager = new CommandManager();
 	installCommands(manager);
 
