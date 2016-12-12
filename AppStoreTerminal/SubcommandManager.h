@@ -8,7 +8,7 @@ public:
 	SubcommandManager(const Command* parent);
 	virtual ~SubcommandManager();
 
-	string getCommandsHelp() const;
+	string getCommandsHelp(const string) const;
 
 private:
 	const Command* m_pParent;

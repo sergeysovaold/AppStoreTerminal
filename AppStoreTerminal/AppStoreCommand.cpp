@@ -1,10 +1,11 @@
 #include <iostream>
-#include <sstream>
+
 #include "AppStoreCommand.h"
 #include "SubcommandManager.h"
 
 #include "commands\appstore\SearchApp.h"
 #include "commands\appstore\AppList.h"
+
 
 AppStoreCommand::AppStoreCommand()
 {
@@ -27,38 +28,10 @@ string AppStoreCommand::getName() const
 
 string AppStoreCommand::getHelp() const
 {
-	return string(m_pSubManager->getCommandsHelp());
-
-	std::stringstream str;
-	unsigned int iMaxLen = 0;
-
-	str << "Manage your applications.\n";
-
-	// TODO: rewrite to single for of commands
-	// maybe: vector<pair<string, string>> - name, description
-
-	for (auto &it : m_pSubManager->getCommandsList())
-	{
-		Command *p = it.second;
-		unsigned int currLen = p->getName().size();
-
-		if (currLen > iMaxLen)
-			iMaxLen = currLen;
-	}
-
-	str << "\t appstore " << string(iMaxLen, ' ')
-		<< "    show this help" << std::endl;
-
-	for (auto &it : m_pSubManager->getCommandsList())
-	{
-		Command *p = it.second;
-		unsigned int currLen = p->getName().size();
-		
-		str << "\t appstore " << p->getName() << string(iMaxLen - currLen, ' ')
-			<< "    " << p->getDescription() << std::endl;
-	}
-
-	return string(str.str());
+	return string(
+		"Manage your applications.\n"
+		+ m_pSubManager->getCommandsHelp("show help")
+	);
 
 	/*return string("Manage your applications.\n"
 		"\t appstore                    show help\n"

@@ -16,11 +16,13 @@ SubcommandManager::~SubcommandManager()
 {
 }
 
-string SubcommandManager::getCommandsHelp() const
+string SubcommandManager::getCommandsHelp(const string emptyFirstCommandDescription = "") const
 {
 	std::stringstream str;
 	unsigned iMaxLen = 0;
 	vector<pair<string, string>> cmdsLines = {};
+
+	cmdsLines.push_back(pair<string, string>("", emptyFirstCommandDescription));
 
 	for (auto &it : getCommandsList())
 	{
